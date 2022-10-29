@@ -12,6 +12,7 @@ function init () {
 
     // init the renderer
     renderer = new THREE.WebGLRenderer({ antialias: true });
+
     // set the size of the renderer
     renderer.setSize(window.innerWidth, window.innerHeight);
     // add the renderer to the DOM
@@ -20,7 +21,9 @@ function init () {
     // create a cube
     const geometry = new THREE.BoxGeometry(2, 2, 2);
     // const material = new THREE.MeshBasicMaterial({ color: 0x0000ff });
-    const texture = new THREE.TextureLoader().load('textures/crate.gif');
+    // set random texture file from the textures folder    
+    const texture = new THREE.TextureLoader().load('textures/' + Math.floor(Math.random() * 19) + '.png');
+    // const texture = new THREE.TextureLoader().load('textures/19.gif');
     
     const material = new THREE.MeshBasicMaterial({ map: texture });
 
