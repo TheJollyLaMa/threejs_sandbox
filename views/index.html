@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Backend Home View</title>
+    <style>
+      body {
+        background-color: #000;
+      }
+      .btn{
+        background-color: #d8cf87;
+        border: 2px dashed #275747;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        margin: 200px 42%;
+        cursor: pointer;
+        opacity: 0.8;
+      }
+      .btn:hover{
+        background-color: #d8cf87;
+        border: 2px solid #275747;
+        color: #275747;
+        background-image: url(favicon.ico);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        opacity: 0.7;
+      }
+      .backend_homescreen {
+        background-image: url(https://decentagency.space/img/complex_realaxation.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        width: 50vw;
+        opacity: 0.9;
+        margin: 25%;
+        position: absolute;
+        top: 0;
+        z-index: -1;    
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Backend Home View -->
+    <div class="backend_homescreen"></div>    
+    <br>
+    <a class="btn" href="/public"><br> Three.js Sandbox</a>
+  </body>
+</html>
